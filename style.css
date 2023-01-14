@@ -176,7 +176,7 @@ ion-icon {
     user-select: none;
     box-shadow:0 0 50px black;
     border-radius: 30px;
-    margin-right: 15px;
+    margin: 15px 15px 0 0;
     display: inline-block;
 }
 
