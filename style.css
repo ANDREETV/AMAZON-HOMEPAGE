@@ -1,3 +1,6 @@
+/**
+* GLOBALE
+**/
 
 * {
     margin: 0;
@@ -9,6 +12,7 @@
 body {
     background-color: rgb(234, 237, 237);
     flex-direction: column;
+    height: 100vh;
 }
 
 a {
@@ -41,6 +45,13 @@ main {
 /**
 * BARRA DI NAVIGAZIONE 
 **/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    z-index: 5;
+}
 .nav {
     display: flex;
     left: 0;
@@ -84,15 +95,17 @@ ion-icon {
     width: 95%;
     height: 40px;
     background-color: orange;
-    margin: 30px 0;
-    color: white;
+    margin: 150px 0 30px;
     font-weight: 900;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
+    color: white;
 }
+
+
 
 /**
 * BANNER GIFT
@@ -128,41 +141,59 @@ ion-icon {
 
 .riga-articoli {
     width: 95%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-color: white;
     height: auto;
 }
 
 .riga-titolo {
-    display: flex;
     padding: 20px 0 0 20px;
     font-weight: 800;
 }
 
-.riga-titolo p {
-    margin-right: 20px;
-}
-
 .riga-titolo a {
-    font-size: 0.8em;
-    padding-top: 5px;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    line-height: 40px;
     color: rgb(87, 160, 173);
 }
 
-.riga-img {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 30px 30px;
+.riga-titolo h1{
+    display: inline-block;
+}
+.riga-img{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
 }
 
-.riga-img img {
-    width: 95%;
+.img_shop{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    box-shadow:0 0 50px black;
+    border-radius: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.img_shop:last-of-type {
+    margin-right:0 ;
+    margin-top: 10px;
+}
+.img_shop img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-
+    object-position: center;
 }
+
 
 /**
 * BANNER GAMING E BANNER AUDIO
@@ -174,43 +205,33 @@ ion-icon {
 .banner-gaming img {
     display: inline-block;
     width: 95%;
-    margin-bottom: 0;
+    margin: 30px 0;
 }
 
-.text-4 {
-    padding: 15px 30px 0;
-    font-size: 1.5em;
+.riga-titolo-2 p{
+    color: black;
+    font-size: 25px;
+}
+
+.riga-titolo-2 a p{
     font-weight: 900;
-    vertical-align: top;
-
-}
-
-.text-5 {
-    padding-top: 25px;
-    font-weight: 800;
-    font-size: 1em;
     color: rgb(87, 160, 173);
-
-}
-
-.riga-titolo-2 {
-    display: flex;
-    vertical-align: bottom;
-    justify-content: center;
-    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 15px;
 }
 
 /**
 * FOOTER
 **/
 
+
 .fine {
     height: 70px;
-    min-height: 100px;
     background-color: rgb(35, 47, 62);
     text-align: center;
     line-height: 70px;
     color: white;
+    margin-top: 30px;
 }
 
 .fine a {
